@@ -28,9 +28,9 @@ public class GUI {
 
     public GUI() {
         // Creamos los objetos
-        var resolvente = new FormulaResolvente();
-        var variacionPorcentual = new VariacionPorcentual();
-        var reglaDeTresSimple = new ReglaDeTres();
+        FormulaResolvente resolvente = new FormulaResolvente();
+        VariacionPorcentual variacionPorcentual = new VariacionPorcentual();
+        ReglaDeTres reglaDeTresSimple = new ReglaDeTres();
 
         calcularResolvente.addActionListener(new ActionListener() {
             @Override
