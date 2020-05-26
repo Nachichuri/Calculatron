@@ -11,12 +11,18 @@ public class ReglaDeTres {
 
     // Calculamos
     public String calcular(JTextField valorA, JTextField valorB, JTextField valorC) {
-        this.valorA = Double.parseDouble(valorA.getText());
-        this.valorB = Double.parseDouble(valorB.getText());
-        this.valorC = Double.parseDouble(valorC.getText());
-
-        this.resultado = String.format("%.2f", ((this.valorB * this.valorC) / this.valorA));
-
+        // Chequeamos el imput para ver que sean doubles parseables
+        try {
+            this.valorA = Double.parseDouble(valorA.getText());
+            this.valorB = Double.parseDouble(valorB.getText());
+            this.valorC = Double.parseDouble(valorC.getText());
+            // Fórmula
+            this.resultado = String.format("%.2f", ((this.valorB * this.valorC) / this.valorA));
+        } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(
+                null,
+                "Completá los campos con números enteros o decimales separados por puntos.");
+        }
         return resultado;
     }
 }

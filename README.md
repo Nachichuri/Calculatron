@@ -18,4 +18,4 @@ Si, ya sé. Es horrible. Pero ayudó a más estudiantes de los que imaginás.
 
 ## TODO
 * Hacer que sea menos horrible (Quizás implementando JavaFX como si estuviésemos en 2020 y no Swing como si fuese 1995)
-* Validar user imputs porque nunca tuve ~~tiempo~~ ganas de hacerlo
+* Agregar más funciones
